@@ -1,7 +1,5 @@
 """
 Personal Finance / Budget Tracker
---------------------------------------------------------------
-A simple, local, command-line budget tracker.
 
 Core (no dependencies required):
 - Stores transactions in a local CSV file (transactions.csv)
@@ -17,9 +15,6 @@ Optional (only if matplotlib is installed):
 
 Install the optional extra with:
     pip install matplotlib
-
-Run:
-    python budget_tracker.py
 """
 
 import csv
@@ -43,10 +38,7 @@ try:
 except ImportError:
     MATPLOTLIB_AVAILABLE = False
 
-
-# ---------------------------------------------------------------------
 # Transaction data handling
-# ---------------------------------------------------------------------
 
 def init_file():
     if not os.path.exists(DATA_FILE):
@@ -114,10 +106,7 @@ def add_transaction():
         check_budget_alert(category, date_str)
     print()
 
-
-# ---------------------------------------------------------------------
 # Budget handling
-# ---------------------------------------------------------------------
 
 def init_budget_file():
     if not os.path.exists(BUDGET_FILE):
@@ -221,10 +210,7 @@ def view_budget_status():
         print(f"  {category:<15} [{bar}] {pct:5.1f}%  (${spent:,.2f} / ${limit:,.2f}){flag}")
     print()
 
-
-# ---------------------------------------------------------------------
 # Summary
-# ---------------------------------------------------------------------
 
 def _compute_summary(rows):
     income = sum(r["amount"] for r in rows if r["type"] == "income")
@@ -269,10 +255,7 @@ def view_summary():
             print(f"  {c:<20} ${amt:,.2f}")
     print()
 
-
-# ---------------------------------------------------------------------
 # ASCII charts (always available)
-# ---------------------------------------------------------------------
 
 def _print_bar_chart(labels_and_values, title, unit="$"):
     print(f"\n--- {title} ---")
@@ -330,11 +313,8 @@ def plot_balance_over_time():
         bar = ("+" if value >= 0 else "-") * bar_len
         print(f"  {date} | {bar} ${value:,.2f}")
     print()
-
-
-# ---------------------------------------------------------------------
+    
 # CSV export
-# ---------------------------------------------------------------------
 
 def export_summary_csv():
     rows = load_data()
@@ -379,10 +359,7 @@ def export_summary_csv():
     print(f"\nSummary exported to '{SUMMARY_EXPORT_FILE}'. "
           f"You can open it in Excel or attach it to an email.\n")
 
-
-# ---------------------------------------------------------------------
 # Matplotlib PNG charts (optional)
-# ---------------------------------------------------------------------
 
 def save_charts_png(silent=False):
     """Generates and saves PNG charts to the charts/ folder. Returns list of paths saved."""
@@ -461,10 +438,7 @@ def save_charts_png(silent=False):
 
     return saved
 
-
-# ---------------------------------------------------------------------
 # HTML monthly report
-# ---------------------------------------------------------------------
 
 def generate_html_report():
     rows = load_data()
@@ -578,10 +552,7 @@ def generate_html_report():
 
     print(f"\nHTML report generated: '{REPORT_FILE}'. Open it in any web browser to view.\n")
 
-
-# ---------------------------------------------------------------------
 # Menu
-# ---------------------------------------------------------------------
 
 def main():
     init_file()
