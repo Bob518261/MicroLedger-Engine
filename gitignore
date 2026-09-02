@@ -1,0 +1,20 @@
+# Personal financial data - never commit real transactions/budgets
+transactions.csv
+budgets.csv
+
+# Generated reports and exports
+budget_summary.csv
+monthly_report.html
+charts/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Editor/OS junk
+.vscode/
+.DS_Store

@@ -1,0 +1,39 @@
+date,type,category,amount,description
+2026-06-01,income,Salary,3200.00,June paycheck
+2026-06-02,expense,Rent,1100.00,June rent
+2026-06-03,expense,Groceries,145.32,Weekly shopping
+2026-06-05,expense,Utilities,85.50,Electric bill
+2026-06-07,expense,Transport,40.00,Gas
+2026-06-10,expense,Entertainment,60.00,Movies with friends
+2026-06-12,expense,Groceries,98.75,Weekly shopping
+2026-06-15,income,Freelance,450.00,Logo design gig
+2026-06-18,expense,Dining Out,52.20,Dinner
+2026-06-20,expense,Groceries,110.10,Weekly shopping
+2026-06-22,expense,Utilities,45.00,Water bill
+2026-06-25,expense,Subscriptions,25.99,Streaming service
+2026-06-28,expense,Transport,38.50,Gas
+2026-07-01,income,Salary,3200.00,July paycheck
+2026-07-02,expense,Rent,1100.00,July rent
+2026-07-04,expense,Groceries,132.40,Weekly shopping
+2026-07-06,expense,Utilities,92.10,Electric bill
+2026-07-09,expense,Entertainment,35.00,Concert ticket
+2026-07-11,expense,Groceries,101.60,Weekly shopping
+2026-07-14,income,Freelance,300.00,Website tweak
+2026-07-16,expense,Dining Out,64.80,Birthday dinner
+2026-07-19,expense,Groceries,115.25,Weekly shopping
+2026-07-21,expense,Transport,42.00,Gas
+2026-07-24,expense,Subscriptions,25.99,Streaming service
+2026-07-27,expense,Health,80.00,Pharmacy
+2026-08-01,income,Salary,3200.00,August paycheck
+2026-08-02,expense,Rent,1150.00,August rent (increase)
+2026-08-03,expense,Groceries,140.00,Weekly shopping
+2026-08-06,expense,Utilities,78.25,Electric bill
+2026-08-08,expense,Transport,45.00,Gas
+2026-08-10,income,Freelance,600.00,Small consulting job
+2026-08-13,expense,Groceries,120.50,Weekly shopping
+2026-08-16,expense,Entertainment,90.00,Weekend trip
+2026-08-18,expense,Dining Out,58.40,Dinner out
+2026-08-21,expense,Groceries,105.30,Weekly shopping
+2026-08-24,expense,Subscriptions,25.99,Streaming service
+2026-08-27,expense,Health,45.00,Dentist copay
+2026-08-30,expense,Transport,40.00,Gas
