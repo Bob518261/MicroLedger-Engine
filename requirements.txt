@@ -2,3 +2,15 @@
 # The core tracker (CLI, CSV storage, budgets/alerts, ASCII charts, CSV export)
 # works with zero dependencies.
 matplotlib
+1. How to install matplotlib into the right Python
+You confirmed earlier your active Python is:
+So install it there specifically:
+"C:\Users\{yourusername}\AppData\Local\Programs\Python\Python312\python.exe" -m pip install matplotlib
+2. Verify it installed correctly
+"C:\Users\telmuun\AppData\Local\Programs\Python\Python312\python.exe" -m pip show matplotlib
+Should print a version number, not "not found."
+3. Run the tracker and test the matplotlib-only features
+python budget_tracker.py
+Try these two menu options specifically:
+Option 10 — Save charts as PNG files. After running it, check your project folder for a new charts/ subfolder containing three files: expenses_by_category.png, income_vs_expenses.png, balance_over_time.png. Open one to confirm it actually rendered a real chart (not a blank/broken image).
+Option 9 — Generate HTML monthly report. This regenerates the same PNGs and also creates monthly_report.html. Double-click that file to open it in your browser — you should see the styled report with the charts embedded inlie, not the "install matplotlib" placeholder message.
