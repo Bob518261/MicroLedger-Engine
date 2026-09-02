@@ -1,0 +1,4 @@
+# Optional — only needed for PNG chart export and charts embedded in the HTML report.
+# The core tracker (CLI, CSV storage, budgets/alerts, ASCII charts, CSV export)
+# works with zero dependencies.
+matplotlib
