@@ -4,10 +4,13 @@
 matplotlib
 1. How to install matplotlib into the right Python
 You confirmed earlier your active Python is:
+"C:\Users\{yourusername}\AppData\Local\Programs\Python\Python312\python.exe"
 So install it there specifically:
 "C:\Users\{yourusername}\AppData\Local\Programs\Python\Python312\python.exe" -m pip install matplotlib
+#alternatively, if the instructionabove does not work, wtite the following line into the terminal:
+#& "C:\Users\telmuun\AppData\Local\Programs\Python\Python312\python.exe" -m pip install matplotlib
 2. Verify it installed correctly
-"C:\Users\telmuun\AppData\Local\Programs\Python\Python312\python.exe" -m pip show matplotlib
+"C:\Users\{yourusername}\AppData\Local\Programs\Python\Python312\python.exe" -m pip show matplotlib
 Should print a version number, not "not found."
 3. Run the tracker and test the matplotlib-only features
 python budget_tracker.py
